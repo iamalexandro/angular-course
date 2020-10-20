@@ -2,7 +2,10 @@ import { Component } from '@angular/core';
 
 @Component ({
   selector: 'app-fecha-actual',
-  templateUrl: './fecha-actual.component.html',
+  template: `
+    <p>Colombia, {{ hoy | date: 'd/M/y H:m'}} </p>
+    <app-copyright></app-copyright>
+  `,
   styleUrls: ['./fecha-actual.component.scss']
 })
 

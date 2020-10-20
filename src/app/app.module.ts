@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FechaActualComponent } from './fecha-actual/fecha-actual.component';
+import { CopyrightComponent } from './copyright/copyright.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FechaActualComponent
+    FechaActualComponent,
+    CopyrightComponent
   ],
   imports: [
     BrowserModule,
