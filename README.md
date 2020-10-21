@@ -4,7 +4,7 @@
 
 Union o enlace de datos, sirve para unir datos entre la plantilla html y la clase del componente.
 
-Interpolación:
+Interpolación, Property Binding, Event Binding y Two Way Binding.
 
 ## Directivas
 
