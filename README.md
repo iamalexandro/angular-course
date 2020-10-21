@@ -1,4 +1,4 @@
-# First Angular App
+# Angular Course
 
 ## Notes
 
