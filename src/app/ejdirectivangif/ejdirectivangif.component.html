@@ -1,0 +1,54 @@
+<div class="container">
+ <h3>Directivas (NgIf)</h3><br>
+  <!--
+  <label>Nombre y Apellidos</label>
+  <input type="text"
+         class="form-control"
+         placeholder="Complete su nombre y apellidos"
+         [(ngModel)]= "nombre">
+  <hr>
+  <button type="submit" class="btn btn-primary"
+          *ngIf = "nombre; else desactivado">
+          Enviar
+  </button>
+  <ng-template #desactivado>
+    <button type="submit" class="btn btn-primary"
+            disabled>
+            Enviar
+    </button>
+  </ng-template> -->
+
+  <h3>¿Cuál es la capital de Francia?</h3>
+  <input type="text"
+         class="form-control"
+         [(ngModel)]="capital"
+         style="text-align: center;"
+         placeholder="Responde algo">
+  <p *ngIf="!capital; else correcto">Complete la pregunta!</p>
+  <ng-template #correcto>
+    <h4 *ngIf="setResultado(); else incorrecto" style="color: springgreen;">¡Correcto!</h4>
+  </ng-template>
+
+  <ng-template #incorrecto>
+    <h4 style="color: red;">Lo siento, intentelo de nuevo.</h4>
+  </ng-template>
+
+
+  <br><h3>¿Cuál es el mejor equipo de fútbol del mundo?</h3>
+  <input type="text"
+         class="form-control"
+         placeholder="Escribe una respuesta"
+         style="text-align: center;"
+        [(ngModel)]="equipo">
+  <p *ngIf="!equipo; else respuesta">Responde un equipo</p>
+
+  <ng-template #respuesta>
+    <h4 *ngIf="setEquipo(); else respuestaErronea"
+        style="color: springgreen;">¡EL MEJOR!</h4>
+  </ng-template>
+
+  <ng-template #respuestaErronea>
+    <h4 style="color: red;">¡No, ese no!</h4>
+  </ng-template>
+
+</div>

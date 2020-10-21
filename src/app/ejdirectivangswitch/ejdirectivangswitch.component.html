@@ -1,0 +1,18 @@
+<h2>Ejemplo de directiva ngSwitch</h2>
+<br>
+
+<div class="jugadores">
+
+  <h3>Jugadores</h3>
+  <ul *ngFor="let jugador of jugadores"  [ngSwitch]="jugador.equipo">
+    <li *ngSwitchCase="'AC MILAN'" class="milan">
+      <h4> {{jugador.nombre}} | {{ jugador.equipo }} </h4>
+    </li>
+    <li *ngSwitchCase="'Barcelona'" class="barcelona">
+      <h4> {{jugador.nombre}} | {{ jugador.equipo }} </h4>
+    </li>
+    <li *ngSwitchCase="'Real Madrid'" class="madrid">
+      <h4> {{jugador.nombre}} | {{ jugador.equipo }} </h4>
+    </li>
+  </ul>
+</div>

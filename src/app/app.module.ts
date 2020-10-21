@@ -11,6 +11,14 @@ import { EjmetodoComponent } from './ejmetodo/ejmetodo.component';
 import { EjpropertybidingComponent } from './ejpropertybiding/ejpropertybiding.component';
 import { EjeventbidingComponent } from './ejeventbiding/ejeventbiding.component';
 import { Ej2waybidingComponent } from './ej2waybiding/ej2waybiding.component';
+import { EjdirectivangifComponent } from './ejdirectivangif/ejdirectivangif.component';
+import { EjdirectivangstyleComponent } from './ejdirectivangstyle/ejdirectivangstyle.component';
+import { EjdirectivangclassComponent } from './ejdirectivangclass/ejdirectivangclass.component';
+import { EjdirectivangforComponent } from './ejdirectivangfor/ejdirectivangfor.component';
+import { EjarrayobjetosComponent } from './ejarrayobjetos/ejarrayobjetos.component';
+import { EjdirectivangswitchComponent } from './ejdirectivangswitch/ejdirectivangswitch.component';
+import { MenuitemDirective } from './menuitem.directive';
+import { EjmidirectivaComponent } from './ejmidirectiva/ejmidirectiva.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +29,15 @@ import { Ej2waybidingComponent } from './ej2waybiding/ej2waybiding.component';
     EjmetodoComponent,
     EjpropertybidingComponent,
     EjeventbidingComponent,
-    Ej2waybidingComponent
+    Ej2waybidingComponent,
+    EjdirectivangifComponent,
+    EjdirectivangstyleComponent,
+    EjdirectivangclassComponent,
+    EjdirectivangforComponent,
+    EjarrayobjetosComponent,
+    EjdirectivangswitchComponent,
+    MenuitemDirective,
+    EjmidirectivaComponent
   ],
   imports: [
     BrowserModule,

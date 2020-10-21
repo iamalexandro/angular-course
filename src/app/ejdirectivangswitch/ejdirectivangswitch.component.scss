@@ -1,0 +1,56 @@
+li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jugadores {
+  text-align: -webkit-center;
+}
+
+.milan {
+  max-width: 600px;
+  height: 120px;
+  background-image: url("../../assets/MilanLogo.png");
+  background-position-x: 10px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FB1C03;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.barcelona {
+  max-width: 600px;
+  height: 120px;
+  background-image: url("../../assets/BarcaLogo.png");
+  background-position-x: 10px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #22589A;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.madrid {
+  max-width: 600px;
+  height: 120px;
+  background-image: url("../../assets/MadridLogo.png");
+  background-position-x: 10px;
+  background-position-y: 10px;
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #F2B602;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+

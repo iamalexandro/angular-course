@@ -1,0 +1,7 @@
+<div class="container">
+  <h4>Ejemplo de Directiva NgStyle</h4>
+  <input type="number" class="form-control" [(ngModel)]="puntuacion">
+  <hr>
+  <h4>Puntuacion Obtenida:&nbsp;</h4>
+  <h4 [ngStyle]="{color: setColor()}" > {{ puntuacion }} </h4>
+</div>
