@@ -7,11 +7,11 @@ export class MenuitemDirective {
 
   @HostBinding('class.itemOrange') private mostrar = false;
 
-  @HostListener('mouseover') onOver() {
+  @HostListener('mouseover') onOver(): void {
     this.mostrar = true;
   }
 
-  @HostListener('mouseout') onOut() {
+  @HostListener('mouseout') onOut(): void {
     this.mostrar = false;
   }
 }
