@@ -1,0 +1,8 @@
+<h1>Ejemplo de @Input y @Output</h1>
+
+<h2>To do list</h2>
+<div class="padre">
+  <app-hijo *ngFor="let avisop of avisos" [aviso]="avisop"
+            (mensajeMarcado)="mostrarMensaje($event)"></app-hijo>
+  <h3 class="text-center"> {{ texto }} </h3>
+</div>
