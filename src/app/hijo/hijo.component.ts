@@ -17,8 +17,12 @@ export class HijoComponent implements OnInit {
     this.leido = !this.leido;
   }
 
-  detectar(event): void {
-    this.mensaje = this.aviso;
+  detectar(leido): void {
+    if (leido) {
+      this.mensaje = this.aviso + ' marcado como completado';
+    } else {
+      this.mensaje = this.aviso + ' marcado como NO completado';
+    }
     this.mensajeMarcado.emit(this.mensaje);
   }
 

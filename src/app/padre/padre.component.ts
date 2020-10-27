@@ -13,7 +13,7 @@ export class PadreComponent implements OnInit {
   texto: string;
 
   mostrarMensaje(event): void {
-    this.texto = event + ' marcado como finalizado';
+    this.texto = event;
   }
   constructor() { }
 
