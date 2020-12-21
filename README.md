@@ -4,8 +4,8 @@
 
 ### Create a component without test
 
-ng generate component component-name --skipTests=true
-ng g c component-name --skipTests=true
+``` ng generate component component-name --skipTests=true ```
+``` ng g c component-name --skipTests=true ```
 
 ## Data Biding
 
@@ -70,6 +70,8 @@ Utlizado para el cambio de divisas
 
 Sirve para acceder a un valor mediante la llave en el mismo HTML
 
+TypeScript
+
 ``` TypeScript
   nombre: string = 'Laura';
   sexo: string = 'mujer';
@@ -78,6 +80,8 @@ Sirve para acceder a un valor mediante la llave en el mismo HTML
   'mujer': 'Estimada'
   };
 ```
+
+HTML
 
 ``` HTML
   <p> {{ sexo | i18nSelect: encabezamiento }} {{ nombre }} </p>
