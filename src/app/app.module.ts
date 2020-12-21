@@ -21,7 +21,7 @@ import { MenuitemDirective } from './menuitem.directive';
 import { EjmidirectivaComponent } from './ejmidirectiva/ejmidirectiva.component';
 import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
-
+import { PipesExamplesComponent } from './pipes-examples/pipes-examples.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +41,8 @@ import { HijoComponent } from './hijo/hijo.component';
     MenuitemDirective,
     EjmidirectivaComponent,
     PadreComponent,
-    HijoComponent
+    HijoComponent,
+    PipesExamplesComponent,
   ],
   imports: [
     BrowserModule,

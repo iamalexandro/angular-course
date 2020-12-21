@@ -1,0 +1,36 @@
+<h2>Pipes Examples</h2>
+
+<!-- PIPE DATE EXAMPLE -->
+<h3 class="title">Pipe Date</h3>
+<p class="subtitle">Date</p>
+<p>Colombia, {{ hoy | date: 'd/M/y H:m'}} </p>
+<p class="subtitle">Date and Hour</p>
+<p>Colombia, {{ hoy | date: 'd-M-y'}} a las {{ hoy | date: 'H:m Z' }} </p>
+<hr>
+
+<h3 class="title">Pipe Uppercase y Lowercase</h3>
+<p class="subtitle">Texto Original</p>
+<p> {{ ciudad }} </p>
+<p class="subtitle">Text with Pipe Uppercase</p>
+<p> {{ ciudad | uppercase}} </p>
+<p class="subtitle">Text with Pipe Lowercase</p>
+<p> {{ ciudad | lowercase}} </p>
+<hr>
+
+<h3 class="title">Pipe Decimal</h3>
+<p class="subtitle">Numero con maximo 2 decimales</p>
+<p>Resultado= {{ resultado | number:'3.2-2' }} </p>
+<p class="subtitle">Numero con maximo 3 decimales</p>
+<p>Resultado= {{ resultado | number:'3.2-3' }} </p>
+<hr>
+
+<h3 class="title">Pipe Currency</h3>
+<p class="subtitle">Pesos a Dolares</p>
+<p>Mil pesos colombianos equivalen a {{ pesodolar | currency: 'USD':true }} </p>
+<p class="subtitle">Pesos a Euros</p>
+<p>Mil pesos colombianos equivalen a {{ pesoeuro | currency: 'EUR':true }} </p>
+<hr>
+
+<h3 class="title">Pipe i18nSelect</h3>
+<p class="subtitle">Acceder al valor mediante la llave</p>
+<p> {{ sexo | i18nSelect: encabezamiento }} {{ nombre }} </p>
