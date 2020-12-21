@@ -22,6 +22,7 @@ import { EjmidirectivaComponent } from './ejmidirectiva/ejmidirectiva.component'
 import { PadreComponent } from './padre/padre.component';
 import { HijoComponent } from './hijo/hijo.component';
 import { PipesExamplesComponent } from './pipes-examples/pipes-examples.component';
+import { EuroPipe } from './euro.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,6 +44,7 @@ import { PipesExamplesComponent } from './pipes-examples/pipes-examples.componen
     PadreComponent,
     HijoComponent,
     PipesExamplesComponent,
+    EuroPipe,
   ],
   imports: [
     BrowserModule,
