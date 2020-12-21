@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   template: `
     <!-- <p>Colombia, {{ hoy | date: 'd/M/y H:m'}} </p> -->
     <!-- PIPE DATE EXAMPLE -->
-    <p>Colombia, {{ hoy | date: 'd-M-y'}} a las {{ hoy | date: 'H:m Z' }} </p>
+    <!-- PIPE LOWERCASE AND UPPERCASE -->
+    <p> {{ ciudad | uppercase }} , {{ hoy | date: 'd-M-y'}} a las {{ hoy | date: 'H:m Z' }} </p>
     <app-copyright></app-copyright>
   `,
   styleUrls: ['./fecha-actual.component.scss']
@@ -14,4 +15,5 @@ import { Component } from '@angular/core';
 
 export class FechaActualComponent {
   hoy = new Date();
+  ciudad = 'Milan';
 }

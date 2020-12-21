@@ -42,7 +42,11 @@ import { PipesExamplesComponent } from './pipes-examples/pipes-examples.componen
     EjmidirectivaComponent,
     PadreComponent,
     HijoComponent,
+<<<<<<< HEAD
     PipesExamplesComponent,
+=======
+    PipesExamplesComponent
+>>>>>>> 7388ccc6a3ee1e4845692558163bddccf855475b
   ],
   imports: [
     BrowserModule,
